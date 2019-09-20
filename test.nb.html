@@ -1749,20 +1749,27 @@ summary {
 
 
 <!-- rnb-text-begin -->
-<p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
-<p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>. a &lt;- 1 b &lt;- 1 c &lt;- -1</p>
+<p>Text</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChjYXJzKVxuYGBgIn0= -->
-<pre class="r"><code>plot(cars)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSA8LSAxXG5iIDwtIDFcbmMgPC0gLTFcblxuKC1iICsgc3FydChiXjIgLSA0KmEqYykpIC8gKDIqYSlcbmBgYCJ9 -->
+<pre class="r"><code>a &lt;- 1
+b &lt;- 1
+c &lt;- -1
+
+(-b + sqrt(b^2 - 4*a*c)) / (2*a)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDAuNjE4MDM0XG4ifQ== -->
+<pre><code>[1] 0.618034</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuKC1iIC0gc3FydChiXjIgLSA0KmEqYykpIC8gKDIqYSlcbmBgYCJ9 -->
+<pre class="r"><code>(-b - sqrt(b^2 - 4*a*c)) / (2*a)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIC0xLjYxODAzNFxuIn0= -->
+<pre><code>[1] -1.618034</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
-<p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
-<p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</p>
-<p>a &lt;- 1 b &lt;- 1 c &lt;- -1</p>
-<p>(-b + sqrt(b^2 - 4<em>a</em>c)) / (2<em>a) (-b - sqrt(b^2 - 4</em>a<em>c)) / (2</em>a)</p>
 <p>install.packages(‘dslabs’)</p>
 <p>library(dslabs) data(murders) class(murders)</p>
 <p>murders</p>
@@ -1775,7 +1782,6 @@ summary {
 <p>options(download.file.method = “wget”)</p>
 <p>wget <a href="https://raw.githubusercontent.com/joonan30/bsms222_123_an/master/analyze_scn2a_mutations.Rmd" class="uri">https://raw.githubusercontent.com/joonan30/bsms222_123_an/master/analyze_scn2a_mutations.Rmd</a></p>
 <p>install.packages(‘wget’)</p>
-<p>wget <a href="https://raw.githubusercontent.com/joonan30/bsms222_123_an/master/analyze_scn2a_mutations.Rmd" class="uri">https://raw.githubusercontent.com/joonan30/bsms222_123_an/master/analyze_scn2a_mutations.Rmd</a></p>
 <p>wget <a href="https://raw.githubusercontent.com/joonan30/bsms222_123_an/master/analyze_scn2a_mutations.Rmd" class="uri">https://raw.githubusercontent.com/joonan30/bsms222_123_an/master/analyze_scn2a_mutations.Rmd</a>&quot;</p>
 <p>install.packages(‘wget’)</p>
 <p>install.packages(‘homebrew’)</p>
@@ -1798,9 +1804,12 @@ summary {
 <p>x &lt;- c(1:5) class(x)</p>
 <p>x &lt;- c(1,3,5) y&lt;-as.integer(x) y</p>
 <p>class(y)</p>
+<p>library(dslabs) data(“murders”) sort(murders$population)</p>
+<p>pop &lt;- order(murders$population) x[pop]</p>
+<p>min(murders$population)</p>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ3RybCtTaGlmdCtFbnRlciouIAphIDwtIDEKYiA8LSAxCmMgPC0gLTEKYGBge3J9CnBsb3QoY2FycykKYGBgCgpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ3RybCtBbHQrSSouCgpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAoY2xpY2sgdGhlICpQcmV2aWV3KiBidXR0b24gb3IgcHJlc3MgKkN0cmwrU2hpZnQrSyogdG8gcHJldmlldyB0aGUgSFRNTCBmaWxlKS4KClRoZSBwcmV2aWV3IHNob3dzIHlvdSBhIHJlbmRlcmVkIEhUTUwgY29weSBvZiB0aGUgY29udGVudHMgb2YgdGhlIGVkaXRvci4gQ29uc2VxdWVudGx5LCB1bmxpa2UgKktuaXQqLCAqUHJldmlldyogZG9lcyBub3QgcnVuIGFueSBSIGNvZGUgY2h1bmtzLiBJbnN0ZWFkLCB0aGUgb3V0cHV0IG9mIHRoZSBjaHVuayB3aGVuIGl0IHdhcyBsYXN0IHJ1biBpbiB0aGUgZWRpdG9yIGlzIGRpc3BsYXllZC4KCmEgPC0gMQpiIDwtIDEKYyA8LSAtMQoKKC1iICsgc3FydChiXjIgLSA0KmEqYykpIC8gKDIqYSkKKC1iIC0gc3FydChiXjIgLSA0KmEqYykpIC8gKDIqYSkKCmluc3RhbGwucGFja2FnZXMoJ2RzbGFicycpCgpsaWJyYXJ5KGRzbGFicykKZGF0YShtdXJkZXJzKQpjbGFzcyhtdXJkZXJzKQoKbXVyZGVycwoKVmlldyhtdXJkZXJzKQoKbXVyZGVycyRzdGF0ZQoKbXVyZGVycyRwb3B1bGF0aW9uCgpzdW1tYXJ5KG11cmRlcnMpCgp3Z2V0IGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9qb29uYW4zMC9ic21zMjIyXzEyM19hbi9tYXN0ZXIvYW5hbHl6ZV9zY24yYV9tdXRhdGlvbnMuUm1kCgppbnN0YWxsLnBhY2thZ2VzKCd3Z2V0JykKCm9wdGlvbnMoZG93bmxvYWQuZmlsZS5tZXRob2QgPSAid2dldCIpCgp3Z2V0IGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9qb29uYW4zMC9ic21zMjIyXzEyM19hbi9tYXN0ZXIvYW5hbHl6ZV9zY24yYV9tdXRhdGlvbnMuUm1kCgppbnN0YWxsLnBhY2thZ2VzKCd3Z2V0JykKCndnZXQgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2pvb25hbjMwL2JzbXMyMjJfMTIzX2FuL21hc3Rlci9hbmFseXplX3NjbjJhX211dGF0aW9ucy5SbWQKCgp3Z2V0IGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9qb29uYW4zMC9ic21zMjIyXzEyM19hbi9tYXN0ZXIvYW5hbHl6ZV9zY24yYV9tdXRhdGlvbnMuUm1kIgoKCmluc3RhbGwucGFja2FnZXMoJ3dnZXQnKQoKCmluc3RhbGwucGFja2FnZXMoJ2hvbWVicmV3JykKCgp3Z2V0IGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9qb29uYW4zMC9ic21zMjIyXzEyM19hbi9tYXN0ZXIvYW5hbHl6ZV9zY24yYV9tdXRhdGlvbnMuUm1kIgoKc2ggLWMgIiQoY3VybCAtZnNTTCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vTGludXhicmV3L2luc3RhbGwvbWFzdGVyL2luc3RhbGwuc2gpIgoKCjMuOSBFeGVyY2lzZXMKCgp0ZW1wIDwtIGMoMzUsIDg4LCA0MiwgODQsIDgxLCAzMCkKdGVtcAoKY2l0eSA8LSBjKCJCZWlqaW5nIiwgIkxhZ29zIiwgIlBhcmlzIiwgIlJpbyBkZSBKYW5laXJvIiwgIlNhbiBKdWFuIiwgIlRvcm9udG8iKQoKCm5hbWVzKHRlbXApIDwtIGNpdHkKdGVtcAoKdGVtcFsxOjNdCgp0ZW1wW2MoMyw1KV0KCjEyOjczCgpzZXEoMSwxMDAsMikKCmxlbmd0aChzZXEoNiw1NSwgNC83KSkKCmNsYXNzKHNlcSgxLDEwLDAuNSkpCgpjbGFzcyhzZXEoMSwxMCkpCgpjbGFzcygxTCkKCgp4IDwtIGMoIjEiLCAiMyIsICI1IikKY2xhc3MoeCkKCnggPC0gYygxLDUsMikKY2xhc3MoeCkKCnggPC0gYygxOjUpCmNsYXNzKHgpCgp4IDwtIGMoMSwzLDUpCnk8LWFzLmludGVnZXIoeCkKeQoKY2xhc3MoeSkKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGV4dAoKYGBge3J9CmEgPC0gMQpiIDwtIDEKYyA8LSAtMQoKKC1iICsgc3FydChiXjIgLSA0KmEqYykpIC8gKDIqYSkKKC1iIC0gc3FydChiXjIgLSA0KmEqYykpIC8gKDIqYSkKYGBgCgoKCgoKaW5zdGFsbC5wYWNrYWdlcygnZHNsYWJzJykKCmxpYnJhcnkoZHNsYWJzKQpkYXRhKG11cmRlcnMpCmNsYXNzKG11cmRlcnMpCgptdXJkZXJzCgpWaWV3KG11cmRlcnMpCgptdXJkZXJzJHN0YXRlCgptdXJkZXJzJHBvcHVsYXRpb24KCnN1bW1hcnkobXVyZGVycykKCndnZXQgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2pvb25hbjMwL2JzbXMyMjJfMTIzX2FuL21hc3Rlci9hbmFseXplX3NjbjJhX211dGF0aW9ucy5SbWQKCmluc3RhbGwucGFja2FnZXMoJ3dnZXQnKQoKb3B0aW9ucyhkb3dubG9hZC5maWxlLm1ldGhvZCA9ICJ3Z2V0IikKCndnZXQgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2pvb25hbjMwL2JzbXMyMjJfMTIzX2FuL21hc3Rlci9hbmFseXplX3NjbjJhX211dGF0aW9ucy5SbWQKCmluc3RhbGwucGFja2FnZXMoJ3dnZXQnKQoKCgoKd2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vam9vbmFuMzAvYnNtczIyMl8xMjNfYW4vbWFzdGVyL2FuYWx5emVfc2NuMmFfbXV0YXRpb25zLlJtZCIKCgppbnN0YWxsLnBhY2thZ2VzKCd3Z2V0JykKCgppbnN0YWxsLnBhY2thZ2VzKCdob21lYnJldycpCgoKd2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vam9vbmFuMzAvYnNtczIyMl8xMjNfYW4vbWFzdGVyL2FuYWx5emVfc2NuMmFfbXV0YXRpb25zLlJtZCIKCnNoIC1jICIkKGN1cmwgLWZzU0wgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0xpbnV4YnJldy9pbnN0YWxsL21hc3Rlci9pbnN0YWxsLnNoKSIKCgozLjkgRXhlcmNpc2VzCgoKdGVtcCA8LSBjKDM1LCA4OCwgNDIsIDg0LCA4MSwgMzApCnRlbXAKCmNpdHkgPC0gYygiQmVpamluZyIsICJMYWdvcyIsICJQYXJpcyIsICJSaW8gZGUgSmFuZWlybyIsICJTYW4gSnVhbiIsICJUb3JvbnRvIikKCgpuYW1lcyh0ZW1wKSA8LSBjaXR5CnRlbXAKCnRlbXBbMTozXQoKdGVtcFtjKDMsNSldCgoxMjo3MwoKc2VxKDEsMTAwLDIpCgpsZW5ndGgoc2VxKDYsNTUsIDQvNykpCgpjbGFzcyhzZXEoMSwxMCwwLjUpKQoKY2xhc3Moc2VxKDEsMTApKQoKY2xhc3MoMUwpCgoKeCA8LSBjKCIxIiwgIjMiLCAiNSIpCmNsYXNzKHgpCgp4IDwtIGMoMSw1LDIpCmNsYXNzKHgpCgp4IDwtIGMoMTo1KQpjbGFzcyh4KQoKeCA8LSBjKDEsMyw1KQp5PC1hcy5pbnRlZ2VyKHgpCnkKCmNsYXNzKHkpCgoKbGlicmFyeShkc2xhYnMpCmRhdGEoIm11cmRlcnMiKQpzb3J0KG11cmRlcnMkcG9wdWxhdGlvbikKCnBvcCA8LSBvcmRlcihtdXJkZXJzJHBvcHVsYXRpb24pCnhbcG9wXQoKbWluKG11cmRlcnMkcG9wdWxhdGlvbikK</div>
 
 
 
